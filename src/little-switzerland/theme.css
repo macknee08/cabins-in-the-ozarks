@@ -33,7 +33,7 @@ h1, h2, h3 { font-stretch: 75%; letter-spacing: -.01em; text-transform: none; }
 .ls-hero { display: grid; grid-template-columns: 7fr 5fr; min-height: min(86vh, 860px); border-bottom: 1px solid #000; }
 .ls-hero .field { background: var(--red); color: #fff; padding: clamp(2rem, 5vw, 4.5rem); display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; position: relative; }
 .ls-hero .field .cross { position: absolute; top: clamp(2rem, 5vw, 4.5rem); right: clamp(2rem, 5vw, 4.5rem); width: clamp(48px, 7vw, 92px); height: auto; }
-.ls-hero h1 { font-size: clamp(3.2rem, 9.4vw, 9.6rem); font-stretch: 62%; font-weight: 900; line-height: .82; letter-spacing: -.035em; margin-top: auto; }
+.ls-hero h1 { font-size: clamp(4rem, 9.4vw, 9.6rem); font-stretch: 62%; font-weight: 900; line-height: .82; letter-spacing: -.035em; margin-top: auto; }
 .ls-hero h1 span { display: block; }
 .ls-hero .lede { font-size: clamp(1.1rem, 1.6vw, 1.35rem); max-width: 34ch; margin: 0; }
 .ls-hero .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
