@@ -204,7 +204,7 @@ def build_ls():
 <section class="ls-hero" aria-label="Welcome">
   <div class="field">
     {CROSS_WHITE}
-    <h1><span>Little</span><span>Switzer&shy;land</span></h1>
+    <h1><span>Little</span><span>Switzerland</span></h1>
     <p class="lede">Five cabins and suites 2&frac12; miles north of Jasper on Scenic Byway 7. Travelers have been stopping here since 1891.</p>
     <div class="actions">
       <a class="btn btn-white" href="#cabins">See the cabins</a>
@@ -234,15 +234,15 @@ def build_ls():
     <div class="copy">
       <h2>Out back</h2>
       <ul>
-        <li>A red roofed pavilion with picnic tables and charcoal grills</li>
+        <li>The Hollow, a red roofed pavilion with picnic tables and grills</li>
         <li>A fire pit for evenings, with firewood on hand</li>
         <li>A porch swing under the old oaks</li>
         <li>Porches and balconies on every cabin</li>
-        <li>Room to park a truck, a trailer or a kayak rack</li>
+        <li>Free parking on site</li>
       </ul>
     </div>
     <div class="grid">
-      <figure class="g1"><img src="{P(g[0])}" alt="The covered picnic pavilion with the Little Switzerland sign" loading="lazy"></figure>
+      <figure class="g1"><img src="{P(g[0])}" alt="The Hollow, the covered picnic pavilion out back" loading="lazy"></figure>
       <figure class="g2"><img src="{P(g[1])}" alt="Picnic tables and grills under the pavilion" loading="lazy"></figure>
       <figure class="g3"><img src="{P(g[2])}" alt="The porch swing in the yard" loading="lazy"></figure>
     </div>
@@ -423,7 +423,7 @@ def build_mw():
   <div class="wrap intro">
     <div class="measure">
       <h2>A house named for its wood</h2>
-      <p>Someone spent years milling local trees into this place. The game room floor is Arkansas hickory with black walnut inlay. The ceiling is whitewashed maple, patterned in walnut. The walls are slabs of dogwood, catalpa, sweet gum, black locust, mimosa, persimmon, osage orange and cypress, with walnut set between every one.</p>
+      <p>The game room floor is local hickory with black walnut inlay. The ceiling is whitewashed maple, patterned in walnut. The walls are slabs of dogwood, catalpa, sweet gum, black locust, mimosa, persimmon, osage orange and cypress, with walnut set between every one.</p>
       <p>Outside, it's 15 acres of Ozark woods, a deck that looks west over the hills, and a fire pit in the yard. Town is a mile away. It doesn't feel like it.</p>
       <p>Just updated: new flooring, new furniture, and fresh felt on the pool table.</p>
     </div>
@@ -597,18 +597,18 @@ def route_svg():
   <path class="road-dash" d="{road}"/>
   <text class="town" x="180" y="30">to Harrison</text>
   <a href="{LS_URL}">
-    <circle cx="153" cy="300" r="13" fill="#d52b1e" stroke="#fff" stroke-width="4"/>
-    <text class="ls-label" x="185" y="300">Little Switzerland</text>
-    <text class="sub" x="186" y="322">2&#189; miles north of Jasper</text>
+    <circle cx="175" cy="300" r="13" fill="#d52b1e" stroke="#fff" stroke-width="4"/>
+    <text class="ls-label" x="203" y="300">Little Switzerland</text>
+    <text class="sub" x="204" y="322">2&#189; miles north of Jasper</text>
   </a>
-  <circle cx="167" cy="430" r="7" fill="#13231b"/>
-  <text class="town" x="188" y="436">Jasper</text>
+  <circle cx="136" cy="430" r="8" fill="#13231b" stroke="#e2e1da" stroke-width="3"/>
+  <text class="town" x="156" y="436">Jasper</text>
   <a href="{MW_URL}">
-    <circle cx="140" cy="520" r="13" fill="#d9a21b" stroke="#1b140f" stroke-width="4"/>
+    <circle cx="137" cy="520" r="13" fill="#d9a21b" stroke="#1b140f" stroke-width="4"/>
     <text class="mw-label" x="172" y="522">Morwood House</text>
     <text class="sub" x="173" y="545">1 mile south of Jasper</text>
   </a>
-  <text class="town" x="198" y="660">Arkansas Grand Canyon overlook</text>
+  <text class="town" x="214" y="664">Arkansas Grand Canyon overlook</text>
   <text class="town" x="198" y="740">to Russellville</text>
   <text class="sub" x="10" y="752" style="font-size:11px;opacity:.6">Not to scale</text>
 </svg>"""
@@ -694,9 +694,7 @@ def build_hub():
   <div class="wrap">
     <h2 class="h2">Everything that's open</h2>
     <p class="lead">All six places on one calendar, synced with Airbnb and VRBO.</p>
-    {ribbon}
-    {orez_slot("ribbon-calendar", [u['orez'] for u in L] + [MW_OREZ], "Live calendar for all six places", "Pick a place to see exact dates and pricing.", LS_HOSTED + "/availability", "Little Switzerland dates")}
-    <p style="margin-top:1rem"><a class="btn btn-ghost" style="color:#e2e1da" href="{MW_HOSTED}/#availability">Morwood House dates</a></p>
+    {orez_slot("ribbon-calendar", [u['orez'] for u in L] + [MW_OREZ], "Live calendar for all six places", "Pick a place to see exact dates and pricing.", LS_HOSTED + "/availability", "Little Switzerland dates").replace("</a>\n</div>", f'</a> <a class="btn btn-ghost" style="color:#e2e1da;margin-left:.5rem" href="{MW_HOSTED}/#availability">Morwood House dates</a>\n</div>')}
   </div>
 </section>
 

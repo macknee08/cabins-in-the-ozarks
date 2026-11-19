@@ -81,6 +81,7 @@
 .answer-note { margin-top: 1.25rem; color: var(--muted); }
 
 .cal { background: var(--ink); color: #e2e1da; }
+.orez-slot { border-radius: 14px; }
 .cal .orez-slot { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.35); }
 .cal .orez-slot .slot-note { color: #b8c2bc; }
 .cal .lead { color: #b8c2bc; }

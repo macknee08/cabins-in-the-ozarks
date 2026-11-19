@@ -35,7 +35,7 @@ h1, h2 { letter-spacing: -.01em; }
 /* HERO */
 .mw-hero { position: relative; min-height: min(92vh, 900px); display: flex; align-items: flex-end; color: var(--ink); overflow: hidden; }
 .mw-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
-.mw-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(27,20,15,.15) 0%, rgba(27,20,15,.1) 40%, rgba(27,20,15,.88) 85%, #1b140f 100%); }
+.mw-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(27,20,15,.72) 0%, rgba(27,20,15,.35) 45%, transparent 70%), linear-gradient(180deg, rgba(27,20,15,.15) 0%, rgba(27,20,15,.1) 40%, rgba(27,20,15,.88) 85%, #1b140f 100%); }
 .mw-hero .wrap { position: relative; z-index: 1; padding-bottom: clamp(2.5rem, 6vw, 5rem); }
 .mw-hero h1 { font-size: clamp(2.8rem, 7.2vw, 6.6rem); line-height: .98; max-width: 14ch; margin-bottom: 1.5rem; }
 .mw-hero .lede { font-size: clamp(1.1rem, 1.6vw, 1.3rem); max-width: 46ch; color: var(--muted-strong); margin-bottom: 2rem; }

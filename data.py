@@ -190,7 +190,7 @@ CHOOSER = [
         ("Cabin 2", "Renovated, king bed, private balcony. From $110.", f"{LS_URL}/cabin-2/", _u("cabin-2")["hero"], "#d52b1e"),
         ("Room 3 or Room 4", "Quiet queen suites. From $85.", f"{LS_URL}/room-3/", _u("room-3")["hero"], "#d52b1e"),
         ("Morwood House", "The whole house and the hot tub to yourselves. From $205.", MW_URL, MW_PHOTOS["hero"], "#d9a21b"),
-    ], "Cabin 2 is our newest renovation and the one couples book first."),
+    ], "Cabin 2 is our newest renovation, finished in December 2025."),
     ("family", "Family of four", [
         ("Cabin 1", "Two bedrooms over two floors, porch and balcony. From $100.", f"{LS_URL}/cabin-1/", _u("cabin-1")["hero"], "#d52b1e"),
         ("Room 5", "Queen plus two twins, table for four, balcony. From $95.", f"{LS_URL}/room-5/", _u("room-5")["hero"], "#d52b1e"),
